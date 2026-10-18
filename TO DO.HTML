@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Flow List</title>
+
+    <link rel="stylesheet" href="TO DO.CSS">
+</head>
+
+<body>
+
+    <!-- Header -->
+<header class="header">
+
+    <div class="brand">
+        <div class="logo"><img src="/Smart Campus Management System/SMART JOGON.jpg"></div>
+
+        <div>
+            <h1>Smart Campus</h1>
+            <p>Management System</p>
+        </div>
+    </div>
+
+
+    <!-- Right Side -->
+    <div class="header-right">
+
+        <!-- Date -->
+        <div class="date-box">
+            📅 <span id="currentDate"></span>
+        </div>
+
+        <!-- Notification -->
+        <button class="notification-btn" id="notificationBtn">
+            <a href="/Smart Campus Management System/Notifications.html">          🔔
+            <span class="notification-dot"></span>
+        </button></a>  
+
+    </div>
+
+</header>
+
+
+    <!-- Main Container -->
+    <main class="container">
+
+        <section class="todo-card">
+
+            <!-- Title -->
+            <div class="todo-heading">
+
+                <div class="todo-icon">✓</div>
+
+                <div>
+                    <h2>Smart Flow</h2>
+                    <p>Small steps make big progress 🚀</p>
+                </div>
+
+            </div>
+
+
+            <!-- Add Task -->
+            <div class="add-task">
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Add a new task..."> 
+                
+
+                <button id="addTaskBtn">Add</button>
+
+            </div>
+
+
+            <!-- Filters -->
+            <div class="controls">
+
+                <div class="filters">
+
+                    <button class="filter active" id="allBtn">
+                        ☷ &nbsp; All (<span id="allCount">5</span>)
+                    </button>
+
+                    <button class="filter" id="pendingBtn">
+                        ◷ &nbsp; Pending (<span id="pendingCount">3</span>)
+                    </button>
+
+                    <button class="filter completed-filter" id="completedBtn">
+                        ✓ &nbsp; Completed (<span id="completedCount">2</span>)
+                    </button>
+
+                </div>
+
+                <button class="clear-btn" id="clearCompleted">
+                <img src="image.png"> &nbsp; Clear Completed
+                </button>
+
+            </div>
+
+
+            <!-- Task List -->
+            <div class="task-list" id="taskList">
+
+                <!-- Task 1 -->
+                <div class="task">
+
+                    <input type="checkbox" class="task-check">
+
+                    <span class="task-name"></span>
+                    <span class="status pending">
+                    </span>
+                    <button class="edit-btn"><img src="edit.png"></button>
+                    <button class="delete-btn"><img src="image.png"></button>
+
+                </div> 
+            </div>
+
+
+            <!-- Footer Message -->
+            <div class="footer-message">
+                💡 &nbsp; Stay consistent and achieve your goals!
+            </div>
+
+        </section>
+
+    </main>
+    <script src="TO DO.JS"></script>
+</body>
+</html>
